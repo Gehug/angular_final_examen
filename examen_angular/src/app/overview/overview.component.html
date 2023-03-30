@@ -1,0 +1,21 @@
+<p>overview works!</p>
+
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Type</th>
+    <th>Waarde</th>
+    <th>Datum</th>
+    <th>Tijd</th>
+  </tr>
+
+  <tr *ngFor="let measurement of allMeasurements">
+    <td>{{measurement.formId}}</td>
+    <td>{{measurement.formType}}</td>
+    <td>{{measurement.formValue}}</td>
+    <td>{{measurement.formDate}}</td>
+    <td>{{measurement.formTime}}</td>
+  </tr>
+
+</table>

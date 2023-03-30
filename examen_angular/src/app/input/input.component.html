@@ -1,0 +1,68 @@
+<p>input works!</p>
+
+
+<form>
+
+  <!--  <h4>Kies het type Meteo</h4>-->
+  <!--  <mat-form-field appearance="fill">-->
+  <!--    <mat-label>Type</mat-label>-->
+  <!--    <select matNativeControl [(ngModel)]="formType" name="type" required>-->
+  <!--      <option value="temperatuur"> Temperatuur</option>-->
+  <!--      <option value="neerslag"> Neerslag</option>-->
+  <!--      <option value="windsnelheid"> Windsnelheid</option>-->
+  <!--    </select>-->
+  <!--  </mat-form-field>-->
+
+
+  <!--  <h4>Voeg de waarden in</h4>-->
+  <!--  <mat-form-field class="example-full-width">-->
+  <!--    <mat-label>waarde</mat-label>-->
+  <!--    <input matInput [(ngModel)]="formValue" name="value">-->
+  <!--  </mat-form-field>-->
+
+
+  <!--  <h4>Kies de datum</h4>-->
+  <!--  <mat-form-field appearance="fill">-->
+  <!--    <mat-label>Choose a date</mat-label>-->
+  <!--    <input matInput [(ngModel)]="formDate" >-->
+  <!--    <mat-hint>MM/DD/YYYY</mat-hint>-->
+  <!--    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>-->
+  <!--    <mat-datepicker #picker></mat-datepicker>-->
+  <!--  </mat-form-field>-->
+
+
+  <!--  <h4>Kies de tijd</h4>-->
+  <!--  <mat-form-field appearance="fill">-->
+  <!--    <mat-label>Tijden</mat-label>-->
+  <!--    <select matNativeControl [(ngModel)]="formTime" name="time" required>-->
+  <!--      <option value="06u00"> 06u00</option>-->
+  <!--      <option value="12u00"> 12u00</option>-->
+  <!--      <option value="18u00"> 18u00</option>-->
+  <!--      <option value="24u00"> 24u00</option>-->
+  <!--    </select>-->
+  <!--  </mat-form-field>-->
+
+
+  <select [(ngModel)]="formType" name="type" required>
+    <option value="temperatuur"> Temperatuur</option>
+    <option value="neerslag"> Neerslag</option>
+    <option value="windsnelheid"> Windsnelheid</option>
+  </select>
+
+  <input [(ngModel)]="formValue" name="value" type="text">
+
+  <input [(ngModel)]="formDate" name="date" type="date">
+
+  <select [(ngModel)]="formTime" name="time" required>
+    <option value="06u00"> 06u00</option>
+    <option value="12u00"> 12u00</option>
+    <option value="18u00"> 18u00</option>
+    <option value="24u00"> 24u00</option>
+  </select>
+  <button (click)="add()" mat-raised-button color="primary">Bewaar de gegevens</button>
+  <button (click)="remove()" mat-raised-button color="warn">Leegmaken</button>
+
+
+</form>
+
+
